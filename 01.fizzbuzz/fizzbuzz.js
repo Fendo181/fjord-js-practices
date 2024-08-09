@@ -8,7 +8,6 @@ for (let step = 1; step <= 20; step++) {
   } else if (step % 5 === 0) {
     console.log("Buzz");
   } else {
-    // それ以外の数はそのまま表示
     console.log(step);
   }
 }
