@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-import minimist from 'minimist';
+import minimist from "minimist";
 
 const args = minimist(process.argv.slice(2));
-const month = args['m']
-const year = args['y']
+const month = args["m"];
+const year = args["y"];
 
 console.log(`    ${month}月 ${year}年    `);
 console.log("日 月 火 水 木 金 土");
@@ -34,4 +34,3 @@ while (day <= lastDay) {
   }
 }
 console.log(calendar);
-
