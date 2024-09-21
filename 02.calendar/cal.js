@@ -3,8 +3,8 @@
 import minimist from "minimist";
 
 const args = minimist(process.argv.slice(2));
-const month = args["m"];
-const year = args["y"];
+const month = args["m"] ?? new Date().getMonth() + 1;
+const year = args["y"] ?? new Date().getFullYear();
 
 console.log(`      ${month}月 ${year}    `);
 console.log("日 月 火 水 木 金 土");
