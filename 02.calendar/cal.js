@@ -6,7 +6,7 @@ const args = minimist(process.argv.slice(2));
 const month = args["m"];
 const year = args["y"];
 
-console.log(`    ${month}月 ${year}年    `);
+console.log(`      ${month}月 ${year}    `);
 console.log("日 月 火 水 木 金 土");
 // 指定した月の1日の曜日を取得
 const firstDay = new Date(year, month - 1, 1);
